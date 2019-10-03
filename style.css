@@ -1,0 +1,113 @@
+.container {
+    height: 80vh;
+    margin-top: 5rem;
+}
+
+.heading {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 3rem;
+}
+
+.todo__create {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todo__field {
+    font-family: Raleway, sans-serif;
+    color:#2e3750;
+    width: 16rem;
+    font-size: 1rem;
+    border: 4px solid;
+    border-radius: 20px;
+    padding: .7rem 1.5rem;   
+}
+
+.todo__field::placeholder {
+    color: #cbd0d5;
+}
+
+.todo__field:focus {
+    outline: none;
+}
+
+.todo__add {
+    height: 2.7rem;
+    width: 2.7rem;
+    margin-left: 2rem;
+}
+
+.todo__list {
+    width: 30%;
+    margin: 0 auto;
+    background-color: azure;
+    padding: 0;
+
+}
+
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 2rem;
+    
+}
+.todo__icon {
+    height: 30px;
+    width: 30px;    
+
+    background-color: black;
+    transition: all .2s;
+    cursor: pointer;
+}
+ 
+/* .todo__icon-active {
+    background-color: transparent;
+} */
+
+.todo__des {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 6rem;
+}
+
+.todo__checkbox {
+    position: absolute;
+    top: 14px;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    left: -3px;
+}
+
+.todo__checkbox:checked + .todo__icon {
+    background-color: transparent; 
+}
+
+
+.todo__checkbox:checked ~ .todo__des {
+    text-decoration: line-through;
+    background-color: coral;
+    transition: all .2s;
+}
+
+
+.todo__close {
+    height: 25px;
+    width: 25px;    
+}
+
+
+
+
+.footer {
+    text-align: center;
+    font-family: monospace;
+}
