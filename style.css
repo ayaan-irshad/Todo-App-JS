@@ -10,11 +10,10 @@
 }
 
 .todo__create {
-   
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
 }
 .todo__field {
     font-family: Raleway, sans-serif;
@@ -45,7 +44,6 @@
     margin: 0 auto;
     background-color: azure;
     padding: 0;
-
 }
 
 .todo__item {
@@ -64,10 +62,6 @@
     transition: all .2s;
     cursor: pointer;
 }
- 
-/* .todo__icon-active {
-    background-color: transparent;
-} */
 
 .todo__des {
     display: flex;
@@ -91,21 +85,17 @@
     background-color: transparent; 
 }
 
-
 .todo__checkbox:checked ~ .todo__des {
     text-decoration: line-through;
     background-color: coral;
     transition: all .2s;
 }
 
-
 .todo__close {
     height: 25px;
     width: 25px;    
+    cursor: pointer;
 }
-
-
-
 
 .footer {
     text-align: center;
